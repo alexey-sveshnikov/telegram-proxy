@@ -19,7 +19,7 @@ sudo apt-get install -y docker-ce unzip
 ```sh
 wget https://github.com/alexey-sveshnikov/telegram-proxy/archive/master.zip
 unzip master.zip
-cd telegram-proxy
+cd telegram-proxy-master
 ```
 
 4. Правка файла с доступами. Доступы прописываются в файле credentials. Каждый пользователь на отдельной строке. Первое поле в строке - юзернейм, второе (отделенное пробелом или табом) - пароль. Все что дальше - комментарий. Обратите внимание, в файле credentials по умолчанию создается один пользователь с именем username и паролем s3kr3T1234.
