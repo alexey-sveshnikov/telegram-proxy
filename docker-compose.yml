@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  proxy:
+    container_name: telegram-socks
+    restart: "always"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1080:1080"
+    volumes:
+      - ./sockd.conf:/etc/sockd.conf
