@@ -37,3 +37,14 @@ cd telegram-proxy-master
 Порт, на котором поднимается прокси, можно поменять в файле restart.sh.
 
 Для просмотра логов можно использовать команду `docker logs socks`.
+
+# Docker compose
+
+1. Установка docker-compose: https://docs.docker.com/compose/install/
+
+2. Для использования с docker compose достаточно перейти в папку с проектом и выполнить:
+```
+docker-compose up -d --build
+```
+
+3. После правки файла credentials, для того чтобы пересобрать образ достаточно выполнить комманду из предыдущего пункта.
